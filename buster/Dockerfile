@@ -17,15 +17,15 @@ RUN set -x \
 	&& wget "${DLURL}/master/etc/entry.sh" -O "${HOMEDIR}/entry.sh" \
 	&& mkdir -p "${STEAMAPPDIR}" \
 	&& chmod 755 "${HOMEDIR}/entry.sh" "${STEAMAPPDIR}" \
-	&& chown "steam:steam" "${HOMEDIR}/entry.sh" "${STEAMAPPDIR}" \
+	&& chown "${USER}:${USER}" "${HOMEDIR}/entry.sh" "${STEAMAPPDIR}" \
 	&& rm -rf /var/lib/apt/lists/*
 
 ENV NS2_NAME="NS2 Server" \
 	NS2_PLAYERLIMIT=16 \
 	NS2_PASSWORD="" \
-	NS2_MODS="" \
+	NS2_MODS=""
 	
-USER steam
+USER ${USER}
 
 WORKDIR ${HOMEDIR}
 
