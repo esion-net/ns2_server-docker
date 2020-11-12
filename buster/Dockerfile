@@ -1,5 +1,5 @@
 ###########################################################
-# Dockerfile that builds a Mordhau Gameserver
+# Dockerfile that builds a NS2 Gameserver
 ###########################################################
 FROM cm2network/steamcmd:root
 
