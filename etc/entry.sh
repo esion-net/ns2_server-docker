@@ -1,12 +1,12 @@
 #!/bin/bash -l -c
-bash "id"
-bash "${STEAMCMDDIR}/steamcmd.sh" +login ${STEAM_USER} ${STEAM_PASS}\
+"id"
+"${STEAMCMDDIR}/steamcmd.sh" +login ${STEAM_USER} ${STEAM_PASS}\
 				+force_install_dir "${STEAMAPPDIR}" \
 				+app_update "${STEAMAPPID}" \
 				validate \
 				+quit
 
-bash "${STEAMAPPDIR}/x64/server_linux" \
+"${STEAMAPPDIR}/x64/server_linux" \
 			-name "${NS2_NAME}" \
 			-map "${NS2_MAP}" \
 			-limit "${NS2_PLAYERLIMIT}" \
