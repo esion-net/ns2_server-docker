@@ -18,6 +18,8 @@ RUN set -x \
 	&& mkdir -p "${STEAMAPPDIR}" \
 	&& chmod 755 "${HOMEDIR}/entry.sh" "${STEAMAPPDIR}" \
 	&& chown "${USER}:${USER}" "${HOMEDIR}/entry.sh" "${STEAMAPPDIR}" \
+	&& touch "${HOMEDIR}/${USER}.txt" \
+	&& touch "${STEAMAPPDIR}/${USER}.txt" \
 	&& rm -rf /var/lib/apt/lists/*
 
 ENV NS2_NAME="NS2 Server" \
