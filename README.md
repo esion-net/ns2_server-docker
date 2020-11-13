@@ -1,15 +1,9 @@
-[![](https://img.shields.io/codacy/grade/7e5de07822de4aeca9104ac810e1cb0b.svg)](https://hub.docker.com/r/cm2network/mordhau/) [![Docker Build Status](https://img.shields.io/docker/cloud/build/cm2network/mordhau.svg)](https://hub.docker.com/r/cm2network/mordhau/) [![Docker Stars](https://img.shields.io/docker/stars/cm2network/mordhau.svg)](https://hub.docker.com/r/cm2network/mordhau/) [![Docker Pulls](https://img.shields.io/docker/pulls/cm2network/mordhau.svg)](https://hub.docker.com/r/cm2network/mordhau/) [![](https://images.microbadger.com/badges/image/cm2network/mordhau.svg)](https://microbadger.com/images/cm2network/mordhau)  [![Discord](https://img.shields.io/discord/747067734029893653)](https://discord.gg/7ntmAwM)
+Natural Selection 2 Server Image for Docker
+
+ [![Docker Build Status](https://img.shields.io/docker/cloud/build/esion/ns2_server-docker)](https://hub.docker.com/r/esion/ns2_server-docker/)
 
 # Supported tags and respective `Dockerfile` links
--	[`latest` (*buster/Dockerfile*)](https://github.com/CM2Walki/Mordhau/blob/master/buster/Dockerfile)
-
-# What is Mordhau?
-MORDHAU is a multiplayer medieval slasher. Create your mercenary and fight in brutal battles where you will experience fast paced combat, castle sieges, cavalry charges, and more. <br/>
-This Docker image contains the dedicated server of the game. <br/>
-
-> [Mordhau](https://store.steampowered.com/app/629760/MORDHAU/)
-
-<img src="https://mordhau.com/static/presskit/mordhau_logo.png" alt="logo" width="300"/></img>
+-	[`latest` (*buster/Dockerfile*)](https://github.com/esion-net/ns2-server_docker/blob/main/buster/Dockerfile)
 
 # How to use this image
 
