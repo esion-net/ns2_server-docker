@@ -5,7 +5,7 @@ bash "${STEAMCMDDIR}/steamcmd.sh" +login ${STEAM_USER} ${STEAM_PASS}\
 				validate \
 				+quit
 
-"${STEAMAPPDIR}/x64/server_linux" \
+bash "${STEAMAPPDIR}/x64/server_linux" \
 			-name "${NS2_NAME}" \
 			-map "${NS2_MAP}" \
 			-limit "${NS2_PLAYERLIMIT}" \
