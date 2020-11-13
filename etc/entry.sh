@@ -3,6 +3,7 @@ echo "Steam Login with user ${STEAM_USER}"
 bash "${STEAMCMDDIR}/steamcmd.sh" +login ${STEAM_USER} ${STEAM_PASS}\
 				+force_install_dir "${STEAMAPPDIR}" \
 				+app_update "${STEAMAPPID}" \
+				validate \
 				+quit
 
 echo "Starting ${NS2_NAME} (${NS2_PLAYERLIMIT} slots)"
