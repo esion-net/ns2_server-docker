@@ -31,7 +31,7 @@ USER ${USER}
 
 WORKDIR ${HOMEDIR}
 
-VOLUME ${STEAMAPPDIR} ${HOMEDIR}/.config/Natural\ Selection\ 2/
+VOLUME ${STEAMAPPDIR}
 
 CMD ["bash", "entry.sh"]
 
