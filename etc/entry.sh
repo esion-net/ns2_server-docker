@@ -1,5 +1,5 @@
 #!/bin/bash
-bash "${STEAMCMDDIR}/steamcmd.sh" +login anonymous \
+bash "${STEAMCMDDIR}/steamcmd.sh" +login ${STEAM_USER} ${STEAM_PASS}\
 				+force_install_dir "${STEAMAPPDIR}" \
 				+app_update "${STEAMAPPID}" \
 				+quit
