@@ -18,8 +18,8 @@ RUN set -x \
 	&& wget "${DLURL}/main/etc/entry.sh" -O "${HOMEDIR}/entry.sh" --no-cache \
 	&& mkdir -p "${STEAMAPPDIR}" \
 	&& mkdir -p "${CONFIGDIR}" \
-	&& chmod 755 "${HOMEDIR}/entry.sh" "${STEAMAPPDIR}" \
-	&& chown "${USER}:${USER}" "${HOMEDIR}/entry.sh" "${STEAMAPPDIR}" \
+	&& chmod 755 "${HOMEDIR}/entry.sh" "${STEAMAPPDIR}" "${CONFIGDIR}" \
+	&& chown "${USER}:${USER}" "${HOMEDIR}/entry.sh" "${STEAMAPPDIR}" "${CONFIGDIR}" \
 	&& rm -rf /var/lib/apt/lists/*
 
 ENV NS2_NAME="NS2 Server" \
