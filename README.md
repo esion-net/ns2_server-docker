@@ -3,7 +3,7 @@ Natural Selection 2 Server Image for Docker
  [![Docker Build Status](https://img.shields.io/docker/cloud/build/esion/ns2_server-docker)](https://hub.docker.com/r/esion/ns2_server-docker/)
 
 # Supported tags and respective `Dockerfile` links
--	[`latest` (*buster/Dockerfile*)](https://github.com/esion-net/ns2-server_docker/blob/main/buster/Dockerfile)
+-	[`latest` (*buster/Dockerfile*)](https://github.com/esion-net/ns2_server-docker/blob/main/buster/Dockerfile)
 
 # How to use this image
 
