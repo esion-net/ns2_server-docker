@@ -40,7 +40,7 @@ ENTRYPOINT \
 					+app_update "${STEAMAPPID}" \
 					validate \
 					+quit && \
-	exec "${STEAMAPPDIR}/x64/server_linux" \
+				"${STEAMAPPDIR}/x64/server_linux" \
 				-name "${NS2_NAME}" \
 				-map "${NS2_MAP}" \
 				-limit "${NS2_PLAYERLIMIT}" \
