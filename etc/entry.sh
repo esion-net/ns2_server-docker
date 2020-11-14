@@ -8,5 +8,6 @@ bash -c "${STEAMAPPDIR}/x64/server_linux \
 			-name \"${NS2_NAME}\" \
 			-map \"${NS2_MAP}\" \
 			-limit \"${NS2_PLAYERLIMIT}\" \
+			-ip \"${NS2_IP}\" \
 			-mods \"${NS2_MODS}\""
 
