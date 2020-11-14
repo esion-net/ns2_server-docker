@@ -29,9 +29,19 @@ USER ${USER}
 
 WORKDIR ${HOMEDIR}
 
-VOLUME ${STEAMAPPDIR}
-
-CMD ["bash", "entry.sh"]
+VOLUME "${STEAMAPPDIR}" "${HOMEDIR}/.config"
 
 # Expose ports
 EXPOSE 8766/udp 27015/udp 27016/udp 
+
+ENTRYPOINT \
+	exec "${STEAMCMDDIR}/steamcmd.sh" +login ${STEAM_USER} ${STEAM_PASS}\
+					+force_install_dir "${STEAMAPPDIR}" \
+					+app_update "${STEAMAPPID}" \
+					validate \
+					+quit; \
+	exec "${STEAMAPPDIR}/x64/server_linux" \
+				-name "${NS2_NAME}" \
+				-map "${NS2_MAP}" \
+				-limit "${NS2_PLAYERLIMIT}" \
+				-mods "${NS2_MODS}"
