@@ -8,7 +8,7 @@ LABEL maintainer="esion@esion.net"
 ENV STEAMAPPID 4940
 ENV STEAMAPP ns2
 ENV STEAMAPPDIR "${HOMEDIR}/${STEAMAPP}-dedicated"
-ENV CONFIGDIR "${HOMEDIR}/.config";
+ENV CONFIGDIR "${HOMEDIR}/.config"
 ENV DLURL https://raw.githubusercontent.com/esion-net/ns2_server-docker
 
 RUN set -x \
